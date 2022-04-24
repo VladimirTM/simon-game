@@ -12,6 +12,7 @@ body {
 
 #start-title{
   font-family: 'Press Start 2P', cursive;
+  color:#011F3F;
 }
 
 .container {
@@ -69,5 +70,8 @@ body {
 @media (max-width: 1028px) {
   .start-btn{
     display: inline-block;
+  }
+  #start-title{
+    color: 	#000000;
   }
 }
