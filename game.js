@@ -12,6 +12,16 @@ $(document).keypress(function() {
   }
 });
 
+$(".start-btn").click(function() {
+
+  $(".start-btn").fadeIn(100).fadeOut(100);
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 $(".btn").click(function() {
   var userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
